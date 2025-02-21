@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Template - Style</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .card {
+            width: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            color: white;
+        }
+        .card a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+        /* Style 01 */
+        .card.style-1 {
+            background: linear-gradient(135deg, #FF6B6B, #FFD166);
+            border: none;
+        }
+        /* Style 02 */
+        .card.style-2 {
+            background: linear-gradient(135deg, #06D6A0, #1B9AAA);
+            border: none;
+        }
+        /* Style 03 */
+        .card.style-3 {
+            background: linear-gradient(135deg, #118AB2, #073B4C);
+            border: none;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card style-1">
+            <h3>Style 01</h3>
+            <a href="style-01/">View More</a>
+        </div>
+        <div class="card style-2">
+            <h3>Style 02</h3>
+            <a href="style-02/">View More</a>
+        </div>
+        <div class="card style-3">
+            <h3>Style 03</h3>
+            <a href="style-03/">View More</a>
+        </div>
+    </div>
+</body>
+</html>
