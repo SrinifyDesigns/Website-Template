@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Template - Style</title>
+    <title>Card Styles</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,13 +12,17 @@
             align-items: center;
             height: 100vh;
             background-color: #f4f4f4;
+            padding: 20px;
         }
         .container {
             display: flex;
             gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         .card {
-            width: 200px;
+            width: 100%;
+            max-width: 250px;
             padding: 20px;
             border-radius: 10px;
             text-align: center;
@@ -49,6 +53,13 @@
         }
         .card:hover {
             transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
